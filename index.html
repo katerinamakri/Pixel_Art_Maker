@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Pixel Art Maker</h1>
+    <div class="container">
+    <section class="left">
+        
+        <h2>Choose Grid Size</h2>
+        <form action="/ekanes-malakia" class="sizePicker">
+            Grid Height:
+            <input type="number" id="input_height" name="height" value="15" min="1" max="60">
+            Grid Width:
+            <input type="number" id="input_width" name="width" value="15" min="1" max="60">
+        
+            <button type="submit" id="submit">Submit</button>
+        </form>
+
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
+
+        <h2>Show Grid</h2>
+        <input type="checkbox" id="checkbox" checked>
+
+        <h2>Tools</h2>
+        <input type="radio" name='tool' id="pencil" checked>
+        <label for="pencil" class="pencil_icon">Pencil</label>
+
+        <input type="radio" name='tool' id="eraser">
+        <label for="eraser" class="eraser_icon">Eraser</label>
+    </section>
+    
+    <section class="right">
+        <h2>Design Canvas</h2>
+        <table id="pixel_canvas"></table>
+        <ul>Instructions:
+            <li>Click and hold to continue drawing</li>
+            <li>Erase a cell with double click</li>
+            <li>Remove the borders of camvas with the button on the left</li></ul>
+
+    </section>
+    </div>
+    
+    <div class='credits'> 2018 January - Google Challenge Scholarship and Udacity </div>
+    <div class='credits'>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="designs.js"></script>
+
+</body>
+</html>
